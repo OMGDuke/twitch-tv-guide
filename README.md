@@ -1,2 +1,2 @@
 # twitch-tv-guide
-Playing with the twtich tv api with react.
+Playing with the twitch tv api with react.
