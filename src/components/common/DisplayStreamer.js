@@ -16,8 +16,9 @@ class DisplayStreamer extends Component {
   }
 
   getStreamerDetails() {
+    console.log(process.env)
     const axiosHeaders = {
-      'Client-ID': '',
+      'Client-ID': process.env.REACT_APP_TWITCH_API,
       'Accept': 'application/vnd.twitchtv.v5+json'
     };
     let apiUrl = `https://api.twitch.tv/kraken/users?login=${this.props.username}`
